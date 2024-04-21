@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    background-image: url(./img/background.jpg);
+    background-position: center;
+   
+}
+.weather-status p{
+ opacity: 0.4;
+ color: blanchedalmond;
+ margin: 0;
+
+}
+.faded {
+    opacity: 0.5;
+}
+.container{
+    max-width: 530px;
+    height: 590px;
+    margin: 10px auto;
+    border-radius: 20%;
+    background: radial-gradient(circle at 10% 20%, rgb(89, 196, 233) 0%, rgb(193, 181, 232) 90%);
+}
+.top-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.search-icon{
+    width: 1.2rem;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 25px;
+    
+    
+}
+input{
+    cursor: crosshair;
+    border: none;
+    opacity: 0.8;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    
+}
+
+.searchInput{
+    padding: 10px 20px;
+    border-radius: 5px 15px;
+    font-size: large;
+    
+}
+
+.city-name{
+   padding-top: 2rem;
+   padding-bottom: 5rem;
+  text-align: center !important;
+  font-size: 1rem;
+
+}
+.weather-components{
+
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr; /* Tek sütun yapısı */
+    gap: 20px; /* Öğeler arasında boşluk */
+    width: 100%; /* Konteynırın genişliği */
+    max-width: 600px; /* Maksimum genişlik */
+    margin: 0 auto; /* Ortalama */
+    font-size: 1.2rem;
+
+}
+
+.weather-status{
+
+    
+    display: grid;
+    grid-template-rows: auto auto auto; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    gap: 5px; 
+
+}
+.weather-status img{
+     max-width: 50px;
+    height: auto;
+    object-fit:fill ;
+    padding-left: 13px;
+}
+.weather-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80px;
+}
+
